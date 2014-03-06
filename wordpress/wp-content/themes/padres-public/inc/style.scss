@@ -28,9 +28,9 @@ $font-sans-bold: carto-gothic-bold, "Century Gothic", CenturyGothic, AppleGothic
 	transition: background 0.3s ease, color 0.3s ease;
 }
 @mixin transition-color {
-	-webkit-transition: color, 0.1s, ease;
-	-moz-transition: color, 0.1s, ease;
-	transition: color, 0.1s, ease;
+	-webkit-transition: color 0.3s ease;
+	-moz-transition: color 0.3s ease;
+	transition: color 0.3s ease;
 }
 
 @mixin replace-image {
@@ -50,7 +50,7 @@ $font-sans-bold: carto-gothic-bold, "Century Gothic", CenturyGothic, AppleGothic
 }
 @mixin blog-banner($blog-url-banner) {
 	.post-type-archive-#{$blog-url-banner} #banner, .single-#{$blog-url-banner} #banner {
-		background:url('images/banner_#{$blog-url-banner}.jpg') no-repeat #fff;
+		background:url('images/banner_#{$blog-url-banner}.jpg') no-repeat #fff center;
 	}
 }
 @mixin blog-banner-adjust($blog-url-banner-adjust:20%) {
@@ -182,7 +182,7 @@ body {
 }
 
 #page {
-	width:1000px;
+	width:1065px;
 	margin:0 auto;
 	border-top:5px solid $brown;
 	border-left:5px solid rgba($orange, .4);
@@ -471,11 +471,16 @@ i {
 			text-indent:115%;
 			white-space: nowrap;
 			overflow:hidden;
-			-webkit-transition: background 0.3s ease, color 0.3s linear;
-			-moz-transition: background 0.3s ease, color 0.3s ease;
-			transition: background 0.3s ease, color 0.3s ease;
+			-webkit-transition: all 0.2s ease;
+			-moz-transition: all 0.2s ease;
+			transition: all 0.2s ease;
 			&:hover {
-				background-color:rgba($orange, .7);
+				// background-color:rgba($orange, .7); no longer turn background orange
+				-webkit-transform: rotate(7deg);
+				-moz-transform: rotate(7deg);
+				-ms-transform: rotate(7deg);
+				-o-transform: rotate(7deg);
+				transform: rotate(7deg);				
 			}
 		}
 	}
@@ -716,13 +721,13 @@ i {
 
 	#banner {
 		height:140px;
-		width:745px;
+		width:810px;
 		float:left;
-		background:url('images/banner_padres-public.jpg') no-repeat;
+		background:url('images/banner_padres-public.jpg') no-repeat center #fff;
 		position:relative;
 	}
 	.home #banner {
-		background:url('images/banner_padres-public.jpg') no-repeat;
+		background:url('images/banner_padres-public.jpg') no-repeat center #fff;
 	}
 	@include blog-banner("rjs-fro");
 	@include blog-banner("400-in-94");
@@ -765,7 +770,7 @@ i {
 }
 
 #primary {
-	width:745px;
+	width:810px;
 	float:left;
 	border-bottom:5px solid $brown;
 	article {
@@ -786,7 +791,7 @@ i {
 		min-height:300px;
 	}
 	.entry-content, .entry-summary { /* entry-summary for search results, etc */
-		width:470px; /* 490 - 20 padding */
+		width:535px; /* 555 - 20 padding */
 		float:right;
 		margin-bottom:40px; /* keep the category section on left column */
 	}
@@ -928,7 +933,7 @@ i {
 footer.site-footer {
 	background: #ffffff;
 	font-size: 12px;
-	width: 745px;
+	width: 810px;
 	font-style: italic;
 	position:relative; /* for bluepper image */
 	.footer-inner {
@@ -942,6 +947,11 @@ footer.site-footer {
 	a {
 		float: left;
 	}
+
+	img.jerry {
+		width:100%;
+		height:auto;
+	}	
 }
 
 
@@ -1122,7 +1132,7 @@ object {
 	height:25px;
 	position:absolute;
 	top:103px;
-	left:31px;
+	left:64px;
 }
 
 
@@ -1263,6 +1273,22 @@ tossing
 
 /* =Responsination!
 ----------------------------------------------- */
+@media only screen and (max-width: 1084px) {
+	#page {
+		width:1000px;
+	}
+	#primary {
+		width:745px;
+	}
+	#primary .entry-content, #primary .entry-summary {
+		width:470px;
+	}
+	#banner {
+		width:745px;
+	}
+
+}
+
 @media only screen and (max-width: 1005px) {
 	#page {
 		width:98%;
@@ -1275,21 +1301,35 @@ tossing
 		border-bottom:1px solid $sand;
 	}
 
+	.widget_search {
+		padding:0 80px 0 60px;
+		margin-bottom:15px;
+		.field {
+			width:100%;
+		}
+	}
+	/* social media icons */
+	#text-2 {
+		width:250px;
+		margin:0 auto;
+		font-size:36px;
+	}
+
 	#secondary {
 		width:100%;
 		float:left;
 		.blog-card {
-			width:31%;
-			float:left;
+			width:40%;
 			height:65px;
 			border-right:1px solid $sand;
 			border-bottom:1px solid $sand;
-			&.ghost-of-ray-kroc, &.padres-prospects {
-				h3 {
-					width:135px;
-					line-height:27px;
-				}
-			}
+		}
+		.blog-card.even {
+			float:left;
+		}
+		.blog-card.odd {
+			border-left:1px solid $sand;
+			float:right;
 		}
 	}
 	.home #primary header .entry-meta {
@@ -1310,10 +1350,6 @@ tossing
 		}
 		.click {
 			margin-right:20px;
-		}
-		img.jerry {
-			width:100%;
-			height:auto;
 		}
 	}
 
@@ -1341,11 +1377,19 @@ tossing
 			}			
 		}
 	}
+	#secondary .blog-card {
+		&.ghost-of-ray-kroc, &.padres-prospects, &.avenging-jack-murphy {
+			h3 {
+				width:135px;
+				line-height:27px;
+			}
+		}
+	}
 }
 
 @media only screen and (max-width: 730px) {
 	.blog-card img {
-		display:none;
+		// display:none;
 	}
 	.home #banner {
 		background-position:26%, center;

@@ -93,7 +93,7 @@ body {
   background: url('images/bkg_body.png') repeat-x center top #e2dbc9;
 }
 #page {
-  width: 1000px;
+  width: 1065px;
   margin: 0 auto;
   border-top: 5px solid #463e31;
   border-left: 5px solid rgba(187, 116, 0, .4);
@@ -311,9 +311,9 @@ a:hover, a:focus, a:active {
 }
 .entry-content a {
   color: #bb7400;
-  -webkit-transition: color, 0.1s, ease;
-  -moz-transition: color, 0.1s, ease;
-  transition: color, 0.1s, ease;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  transition: color 0.3s ease;
   /* Text meant only for screen readers */
 }
 .entry-content a:hover {
@@ -358,12 +358,16 @@ i {
   text-indent: 115%;
   white-space: nowrap;
   overflow: hidden;
-  -webkit-transition: background 0.3s ease, color 0.3s linear;
-  -moz-transition: background 0.3s ease, color 0.3s ease;
-  transition: background 0.3s ease, color 0.3s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 #masthead .site-title a:hover {
-  background-color: rgba(187, 116, 0, .7);
+  -webkit-transform: rotate(7deg);
+  -moz-transform: rotate(7deg);
+  -ms-transform: rotate(7deg);
+  -o-transform: rotate(7deg);
+  transform: rotate(7deg);
 }
 #masthead hgroup {
   float: right;
@@ -450,9 +454,9 @@ i {
   padding-bottom: 20px;
 }
 .widget a {
-  -webkit-transition: color, 0.1s, ease;
-  -moz-transition: color, 0.1s, ease;
-  transition: color, 0.1s, ease;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  transition: color 0.3s ease;
   color: #463e31;
 }
 .widget a:hover {
@@ -610,43 +614,43 @@ i {
 }
 #banner {
   height: 140px;
-  width: 745px;
+  width: 810px;
   float: left;
-  background: url('images/banner_padres-public.jpg') no-repeat;
+  background: url('images/banner_padres-public.jpg') no-repeat center #fff;
   position: relative;
 }
 .home #banner {
-  background: url('images/banner_padres-public.jpg') no-repeat;
+  background: url('images/banner_padres-public.jpg') no-repeat center #fff;
 }
 .post-type-archive-rjs-fro #banner, .single-rjs-fro #banner {
-  background: url('images/banner_rjs-fro.jpg') no-repeat #fff;
+  background: url('images/banner_rjs-fro.jpg') no-repeat #fff center;
 }
 .post-type-archive-400-in-94 #banner, .single-400-in-94 #banner {
-  background: url('images/banner_400-in-94.jpg') no-repeat #fff;
+  background: url('images/banner_400-in-94.jpg') no-repeat #fff center;
 }
 .post-type-archive-sacrifice-bunt #banner, .single-sacrifice-bunt #banner {
-  background: url('images/banner_sacrifice-bunt.jpg') no-repeat #fff;
+  background: url('images/banner_sacrifice-bunt.jpg') no-repeat #fff center;
 }
 .post-type-archive-ghost-of-ray-kroc #banner, .single-ghost-of-ray-kroc #banner {
-  background: url('images/banner_ghost-of-ray-kroc.jpg') no-repeat #fff;
+  background: url('images/banner_ghost-of-ray-kroc.jpg') no-repeat #fff center;
 }
 .post-type-archive-avenging-jack-murphy #banner, .single-avenging-jack-murphy #banner {
-  background: url('images/banner_avenging-jack-murphy.jpg') no-repeat #fff;
+  background: url('images/banner_avenging-jack-murphy.jpg') no-repeat #fff center;
 }
 .post-type-archive-vocal-minority #banner, .single-vocal-minority #banner {
-  background: url('images/banner_vocal-minority.jpg') no-repeat #fff;
+  background: url('images/banner_vocal-minority.jpg') no-repeat #fff center;
 }
 .post-type-archive-son-of-a-duck #banner, .single-son-of-a-duck #banner {
-  background: url('images/banner_son-of-a-duck.jpg') no-repeat #fff;
+  background: url('images/banner_son-of-a-duck.jpg') no-repeat #fff center;
 }
 .post-type-archive-padres-trail #banner, .single-padres-trail #banner {
-  background: url('images/banner_padres-trail.jpg') no-repeat #fff;
+  background: url('images/banner_padres-trail.jpg') no-repeat #fff center;
 }
 .post-type-archive-padres-prospects #banner, .single-padres-prospects #banner {
-  background: url('images/banner_padres-prospects.jpg') no-repeat #fff;
+  background: url('images/banner_padres-prospects.jpg') no-repeat #fff center;
 }
 .post-type-archive-padres-and-pints #banner, .single-padres-and-pints #banner {
-  background: url('images/banner_padres-and-pints.jpg') no-repeat #fff;
+  background: url('images/banner_padres-and-pints.jpg') no-repeat #fff center;
 }
 .home #primary .hentry {
   min-height: 0;
@@ -666,7 +670,7 @@ i {
   margin-bottom: 15px;
 }
 #primary {
-  width: 745px;
+  width: 810px;
   float: left;
   border-bottom: 5px solid #463e31;
 }
@@ -689,8 +693,8 @@ i {
   min-height: 300px;
 }
 #primary .entry-content, #primary .entry-summary {
-  width: 470px;
-  /* 490 - 20 padding */
+  width: 535px;
+  /* 555 - 20 padding */
   float: right;
   margin-bottom: 40px;
   /* keep the category section on left column */
@@ -823,7 +827,7 @@ i {
 footer.site-footer {
   background: #fff;
   font-size: 12px;
-  width: 745px;
+  width: 810px;
   font-style: italic;
   position: relative;
   /* for bluepper image */
@@ -840,6 +844,10 @@ footer.site-footer .click {
 }
 footer.site-footer a {
   float: left;
+}
+footer.site-footer img.jerry {
+  width: 100%;
+  height: auto;
 }
 .blog .format-aside .entry-title, .archive .format-aside .entry-title {
   display: none;
@@ -985,7 +993,7 @@ body.attachment footer {
   height: 25px;
   position: absolute;
   top: 103px;
-  left: 31px;
+  left: 64px;
   /* animationS */
   /*
 ==============================================
@@ -1108,6 +1116,20 @@ tossing
     -webkit-transform: rotate(-4deg);
   }
 }
+@media only screen and (max-width: 1084px) {
+  #page {
+    width: 1000px;
+  }
+  #primary {
+    width: 745px;
+  }
+  #primary .entry-content, #primary .entry-summary {
+    width: 470px;
+  }
+  #banner {
+    width: 745px;
+  }
+}
 @media only screen and (max-width: 1005px) {
   #page {
     width: 98%;
@@ -1119,20 +1141,35 @@ tossing
   #masthead {
     border-bottom: 1px solid #e2dbc9;
   }
+  .widget_search {
+    padding: 0 80px 0 60px;
+    margin-bottom: 15px;
+    /* social media icons */
+  }
+  .widget_search .field {
+    width: 100%;
+  }
+  #text-2 {
+    width: 250px;
+    margin: 0 auto;
+    font-size: 36px;
+  }
   #secondary {
     width: 100%;
     float: left;
   }
   #secondary .blog-card {
-    width: 31%;
-    float: left;
+    width: 40%;
     height: 65px;
     border-right: 1px solid #e2dbc9;
     border-bottom: 1px solid #e2dbc9;
   }
-  #secondary .blog-card.ghost-of-ray-kroc h3, #secondary .blog-card.padres-prospects h3 {
-    width: 135px;
-    line-height: 27px;
+  #secondary .blog-card.even {
+    float: left;
+  }
+  #secondary .blog-card.odd {
+    border-left: 1px solid #e2dbc9;
+    float: right;
   }
   .home #primary header .entry-meta {
     background-position: left top;
@@ -1155,10 +1192,6 @@ tossing
   footer.site-footer .click {
     margin-right: 20px;
   }
-  footer.site-footer img.jerry {
-    width: 100%;
-    height: auto;
-  }
   #yb-toolbar, #text-3, #text-5, #text-4 {
     display: none;
   }
@@ -1180,11 +1213,12 @@ tossing
     font-size: 28px;
     margin: 10px 0 10px;
   }
+  #secondary .blog-card.ghost-of-ray-kroc h3, #secondary .blog-card.padres-prospects h3, #secondary .blog-card.avenging-jack-murphy h3 {
+    width: 135px;
+    line-height: 27px;
+  }
 }
 @media only screen and (max-width: 730px) {
-  .blog-card img {
-    display: none;
-  }
   .home #banner {
     background-position: 26%, center;
   }
