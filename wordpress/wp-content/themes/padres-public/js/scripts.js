@@ -1,8 +1,4 @@
 $(document).ready(function() {
-    $('div.blog-card:odd').addClass('odd');
-    $('div.blog-card:even').addClass('even');
-
-
     var effect = "tossing";
 
     function delayedEffect() {
@@ -30,4 +26,10 @@ $(document).ready(function() {
       
       }
     });
+
+    $('div.blog-card:odd').addClass('odd');
+    $('div.blog-card:even').addClass('even');
+
 });
+
+
