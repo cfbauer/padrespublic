@@ -55,7 +55,7 @@
 		</div><!-- .entry-summary -->
 		<?php else : ?>
 		<div class="entry-content">
-			<?php the_content('(Read More...)'); ?>
+			<?php the_content('Read More...'); ?>
 			<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'padres_public' ), 'after' => '</div>' ) ); ?>
 		</div><!-- .entry-content -->
 	<?php endif; ?>

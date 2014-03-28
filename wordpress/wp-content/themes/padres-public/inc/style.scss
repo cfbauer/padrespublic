@@ -27,10 +27,10 @@ $font-sans-bold: carto-gothic-bold, "Century Gothic", CenturyGothic, AppleGothic
 	-moz-transition: background 0.3s ease, color 0.3s ease;
 	transition: background 0.3s ease, color 0.3s ease;
 }
-@mixin transition-color {
-	-webkit-transition: color 0.3s ease;
-	-moz-transition: color 0.3s ease;
-	transition: color 0.3s ease;
+@mixin transition-color($speed:.3s) {
+	-webkit-transition: color $speed ease;
+	-moz-transition: color $speed ease;
+	transition: color $speed ease;
 }
 
 @mixin replace-image {
@@ -424,7 +424,6 @@ a:active {
 }
 .entry-content a {
 	color: $orange;
-	@include transition-color;
 	&:hover {
 		color:rgba($orange, .5);
 	}
@@ -587,7 +586,7 @@ i {
 	border-bottom:1px solid $sand;
 	padding-bottom:20px;
 	a {
-		@include transition-color;
+		@include transition-color($speed:.2s);
 		color:$brown;
 		&:hover {
 			color:$orange;
@@ -817,6 +816,9 @@ i {
 			padding:3px 5px 0px;
 			margin:0 2px 4px 0;
 			display:inline-block;
+			&:hover {
+				background:rgba($sand, .75);
+			}
 		}
 	}
 	footer.entry-meta {
@@ -824,7 +826,7 @@ i {
 		line-height:17px;
 		border-top:1px solid $sand;
 		padding-top:8px;
-		width:150px;
+		width:150px;		
 	}
 
 	.cat-links, .tags-links, .comments-link, .edit-link {
@@ -832,6 +834,14 @@ i {
 	}
 	.more-link {
 		display:block;
+		background:$sand;
+		color:$brown;
+		padding:7px 9px 5px;
+		float:left;
+		font-size:13px;
+		&:hover {
+			background:rgba($sand, .8);
+		}		
 	}
 }
 

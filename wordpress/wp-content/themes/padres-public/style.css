@@ -311,9 +311,6 @@ a:hover, a:focus, a:active {
 }
 .entry-content a {
   color: #bb7400;
-  -webkit-transition: color 0.3s ease;
-  -moz-transition: color 0.3s ease;
-  transition: color 0.3s ease;
   /* Text meant only for screen readers */
 }
 .entry-content a:hover {
@@ -454,9 +451,9 @@ i {
   padding-bottom: 20px;
 }
 .widget a {
-  -webkit-transition: color 0.3s ease;
-  -moz-transition: color 0.3s ease;
-  transition: color 0.3s ease;
+  -webkit-transition: color 0.2s ease;
+  -moz-transition: color 0.2s ease;
+  transition: color 0.2s ease;
   color: #463e31;
 }
 .widget a:hover {
@@ -723,6 +720,9 @@ i {
   margin: 0 2px 4px 0;
   display: inline-block;
 }
+#primary .entry-meta .cat-links a:hover {
+  background: rgba(226, 219, 201, .75);
+}
 #primary footer.entry-meta {
   font-size: 12px;
   line-height: 17px;
@@ -735,6 +735,14 @@ i {
 }
 #primary .more-link {
   display: block;
+  background: #e2dbc9;
+  color: #463e31;
+  padding: 7px 9px 5px;
+  float: left;
+  font-size: 13px;
+}
+#primary .more-link:hover {
+  background: rgba(226, 219, 201, .8);
 }
 .page-header {
   padding: 20px 0 0 20px;
