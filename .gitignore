@@ -1,4 +1,5 @@
 .htaccess
+.ftpquota
 wp-config.php
 wordpress/wp-content/uploads/
 wordpress/wp-content/blogs.dir/
