@@ -16,6 +16,7 @@
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type"text/javascript" src="https://ia902500.us.archive.org/22/items/gfycat_hover/gfycat_hover.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/scripts.js" type="text/javascript"></script>
 
 <!--[if lt IE 9]>
