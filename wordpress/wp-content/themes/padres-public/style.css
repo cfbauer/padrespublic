@@ -3,7 +3,7 @@ Theme Name: Padres Public
 Author: Chris Bauer
 Author URI: http://chrisbauer.org
 Description: Thugs better scat when the gat goes click clat
-Version: 1.0
+Version: 1.2
 License: GNU General Public License
 License URI: license.txt
 */
@@ -288,6 +288,31 @@ textarea {
   /* Improves readability and alignment in all browsers */
   vertical-align: top;
   width: 98%;
+  /* pull quotes */
+}
+blockquote.pullquote {
+  margin: 20px;
+  padding: 20px 12px 20px 20px;
+  max-width: 235px;
+  border: none;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: bold;
+  text-align: left;
+  float: right;
+  overflow: hidden;
+  background: rgba(226, 219, 201, .2);
+  border-left: 5px solid rgba(226, 219, 201, .6);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+blockquote.pullquote.right {
+  float: right;
+}
+blockquote.pullquote p {
+  margin: 0;
+  padding: 0;
   /* tables */
 }
 thead th {
@@ -1049,11 +1074,6 @@ bigEntrance
   }
 }
 @-webkit-keyframes bigEntrance {
-  /*
-==============================================
-tossing
-==============================================
-*/
   0% {
     -webkit-transform: scale(0.3) rotate(6deg) translateX(-30%) translateY(30%);
     opacity: 0.2;
@@ -1082,6 +1102,31 @@ tossing
     -webkit-transform: scale(1) rotate(0deg) translateX(0%) translateY(0%);
     opacity: 1;
   }
+}
+.pullquote {
+  /*
+==============================================
+tossing
+==============================================
+*/
+}
+@keyframes fadeInRight {
+  .pullquote 0% {
+    opacity: 0;
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+  .pullquote 100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+.pullquote .fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
 }
 .tossing {
   animation-name: tossing;
@@ -1250,5 +1295,10 @@ tossing
   }
   #banner {
     background-color: #fff;
+  }
+  blockquote.pullquote {
+    width: 100%;
+    margin: 0 0 20px 0;
+    max-width: none;
   }
 }
