@@ -4,7 +4,7 @@ Tags: sass, scss, css
 Plugin URI: https://github.com/ConnectThink/WP-SCSS
 Requires at least: 3.0.1
 Tested up to: 3.8
-Stable tag: 1.1.3
+Stable tag: 1.1.5
 License: GPLv3 or later
 License URI: http://www.gnu.org/copyleft/gpl.html
 
@@ -14,7 +14,7 @@ Compiles .scss files to .css and enqueues them.
 
 Compiles .scss files on your wordpress install using [lefo's scssphp](https://github.com/leafo/scssphp). Includes settings page for configuring directories, error reporting, compiling options, and auto enqueuing.
 
-The plugin only compiles when changes have been made to the scss files. Compiles are made to the matching css file, so disabling this plugin will not take down your stylesheets. In the instance where a matching css file does not exist yet, the plugin will create the appropriate css file in the css directory. 
+The plugin only compiles when changes have been made to the scss files. Compiles are made to the matching css file, so disabling this plugin will not take down your stylesheets. In the instance where a matching css file does not exist yet, the plugin will create the appropriate css file in the css directory.
 
 [Get detailed instructions on github](https://github.com/ConnectThink/WP-SCSS)
 
@@ -26,30 +26,34 @@ The plugin only compiles when changes have been made to the scss files. Compiles
 
 == Frequently Asked Questions ==
 
+= Can I use a child theme? =
+
+Yes, absolutely. Make sure you define your directories relative to your child theme and that your child theme is active. Otherwise you'll see an error regarding missing directories.
+
 = How do I @import subfiles =
 
 You can import other scss files into parent files and compile them into a single css file. To do this, use @import as normal in your scss file. All imported file names *must* start with an underscore. Otherwise they will be compiled into their own css file.
 
 When importing in your scss file, you can leave off the underscore.
-    
-> `@import 'subfile';`
-    
 
-= Does this plugin support Compass? = 
+> `@import 'subfile';`
+
+
+= Does this plugin support Compass? =
 Currently there isn't a way to fully support [compass](https://github.com/chriseppstein/compass) with a php compiler. If you want limited support, you can manually import the compass framework. You'll need both the _compass.scss and compass directory.
-    
-    
+
+
 > `compass / frameworks / compass / stylesheets /
 
 > `@import 'compass';`
 
 
-Alternatively, you can include [Bourbon](https://github.com/thoughtbot/bourbon) in a similar fashion. 
+Alternatively, you can include [Bourbon](https://github.com/thoughtbot/bourbon) in a similar fashion.
 
 = Can I use .sass syntax with this Plugin? =
 This plugin will only work with .scss format.
 
-= It's not updating my css, what's happening? = 
+= It's not updating my css, what's happening? =
 Do you have errors printing to the front end? If not, check your log file in your scss directory. The css will not be updated if there are errors in your sass file(s).
 
 Make sure your directories are properly defined in the settings. Paths are defined from the root of the theme.
@@ -58,6 +62,12 @@ Make sure your directories are properly defined in the settings. Paths are defin
 If you are having issues with the plugin, create an issue on [github](https://github.com/ConnectThink/WP-SCSS), and we'll do our best to help.
 
 == Changelog ==
+= 1.1.5 =
+* Added option to only show errors to logged in users
+
+= 1.1.4 =
+* Add suport for subfolders in scss directory
+
 = 1.1.3 =
 * Hotfix for a accidental character
 

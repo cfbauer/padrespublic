@@ -218,6 +218,7 @@ class Wp_Scss_Settings
         
         $html = '<select id="errors" name="wpscss_options[errors]">';  
             $html .= '<option value="show"' . selected( $this->options['errors'], 'show', false) . '>Show in Header</option>';  
+            $html .= '<option value="show-logged-in"' . selected( $this->options['errors'], 'show-logged-in', false) . '>Show to Logged In Users</option>';
             $html .= '<option value="log"' . selected( $this->options['errors'], 'hide', false) . '>Print to Log</option>';  
         $html .= '</select>';  
       
@@ -230,7 +231,7 @@ class Wp_Scss_Settings
     function enqueue_callback() {  
       $this->options = get_option( 'wpscss_options' );  
         
-      $html = '<input type="checkbox" id="enqueue" name="wpscss_options[enqueue]" value="1"' . checked( 1, $this->options['enqueue'], false ) . '/>';   
+      $html = '<input type="checkbox" id="enqueue" name="wpscss_options[enqueue]" value="1"' . checked( 1, isset($this->options['enqueue']) ? $this->options['enqueue'] : 0, false ) . '/>';   
       $html .= '<label for="enqueue"></label>';  
       
     echo $html;  

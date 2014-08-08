@@ -22,6 +22,8 @@ $font-serif: bree, "Rockwell Extra Bold", "Rockwell Bold", monospace;
 $font-sans: carto-gothic, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 $font-sans-bold: carto-gothic-bold, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 
+@import 'hover/hover';
+
 @mixin transition-background-color {
 	-webkit-transition: background 0.3s ease, color 0.3s linear;
 	-moz-transition: background 0.3s ease, color 0.3s ease;
@@ -486,7 +488,6 @@ i {
 	overflow:hidden;
 	margin-bottom:1px;
 	background:#fff;
-
 	.site-title  {
 		margin:0;
 		border-left:1px solid $sand;
@@ -498,18 +499,7 @@ i {
 			background:url('images/logo.png') no-repeat no-repeat 10px 10px;
 			text-indent:115%;
 			white-space: nowrap;
-			overflow:hidden;
-			-webkit-transition: all 0.2s ease;
-			-moz-transition: all 0.2s ease;
-			transition: all 0.2s ease;
-			&:hover {
-				// background-color:rgba($orange, .7); no longer turn background orange
-				-webkit-transform: rotate(7deg);
-				-moz-transform: rotate(7deg);
-				-ms-transform: rotate(7deg);
-				-o-transform: rotate(7deg);
-				transform: rotate(7deg);				
-			}
+			@include grow();		
 		}
 	}
 	hgroup {
@@ -615,7 +605,8 @@ i {
 	border-bottom:1px solid $sand;
 	padding-bottom:20px;
 	a {
-		@include transition-color($speed:.2s);
+		@include transition-color($speed:.15s);
+		@include grow();
 		color:$brown;
 		&:hover {
 			color:$orange;
@@ -751,11 +742,11 @@ i {
 		height:140px;
 		width:810px;
 		float:left;
-		background:url('images/banner_padres-public.jpg') no-repeat center #fff;
+		background:url('images/banner_gwynn.jpg') no-repeat center #fff;
 		position:relative;
 	}
 	.home #banner {
-		background:url('images/banner_padres-public.jpg') no-repeat center #fff;
+		background:url('images/banner_gwynn.jpg') no-repeat center #fff;
 	}
 	@include blog-banner("rjs-fro");
 	@include blog-banner("400-in-94");
@@ -1453,8 +1444,8 @@ tossing
 	.blog-card img {
 		// display:none;
 	}
-	.home #banner {
-		background-position:26%, center;
+	.home #banner, #banner {
+		background-position:94% center;
 	}
 
 	.main-navigation a {

@@ -18,14 +18,12 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script type"text/javascript" src="https://ia902500.us.archive.org/22/items/gfycat_hover/gfycat_hover.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/scripts.js" type="text/javascript"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/wow.min.js" type="text/javascript"></script>
 
 <!--[if lt IE 9]>
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
 <![endif]-->
 
-<link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/inc/animate.css">
-<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" type="text/css" rel="stylesheet">
 <link rel="shortcut icon" href="<?php bloginfo( 'template_url' ); ?>/favicon.ico" />
 
 <?php wp_head(); ?>
@@ -36,7 +34,7 @@
 	<?php do_action( 'before' ); ?>
 	<header id="masthead" class="site-header" role="banner">
 		<hgroup>
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+			<h1 class="site-title"><a class="" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 		</hgroup>
 
 		<nav role="navigation" class="site-navigation main-navigation">

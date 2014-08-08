@@ -1,3 +1,7 @@
+wow = function() {
+}
+
+
 $(document).ready(function() {
     var effect = "tossing";
 
@@ -53,18 +57,6 @@ $(document).ready(function() {
         pullquote.parent().before('<blockquote class="' + classcontent + '"><p><q>' + pullquotecontent + '</q></p></blockquote>');
       });
     }
-
-    // wow entrance animation 
-
-    var wow = new WOW(
-      {
-        boxClass:     'wow',      // animated element css class (default is wow)
-        animateClass: 'fadeInRight', // animation css class (default is animated)
-        offset:       0,          // distance to the element when triggering the animation (default is 0)
-        mobile:       true        // trigger animations on mobile devices (true is default)
-      }
-    );
-    wow.init();
 
 });
 
