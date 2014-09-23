@@ -4,7 +4,7 @@ Tags: sass, scss, css
 Plugin URI: https://github.com/ConnectThink/WP-SCSS
 Requires at least: 3.0.1
 Tested up to: 3.8
-Stable tag: 1.1.5
+Stable tag: 1.1.6
 License: GPLv3 or later
 License URI: http://www.gnu.org/copyleft/gpl.html
 
@@ -62,8 +62,11 @@ Make sure your directories are properly defined in the settings. Paths are defin
 If you are having issues with the plugin, create an issue on [github](https://github.com/ConnectThink/WP-SCSS), and we'll do our best to help.
 
 == Changelog ==
+= 1.1.6 =
+* Upgraded scss.inc.php to version 0.0.10; via pull request from [kirkhoff](https://github.com/kirkhoff)
+
 = 1.1.5 =
-* Added option to only show errors to logged in users
+* Added option to only show errors to logged in users; via pull request from [tolnem](https://github.com/tolnem)
 
 = 1.1.4 =
 * Add suport for subfolders in scss directory
