@@ -10,7 +10,7 @@
  */
 
 // Exit if accessed directly
-if ( !defined( 'ABSPATH' ) ) exit;
+if ( ! defined( 'ABSPATH' ) ) { exit; }
 
 /** Nicename ******************************************************************/
 
@@ -29,18 +29,18 @@ if ( !defined( 'ABSPATH' ) ) exit;
  * @uses apply_filters() To call the 'ba_eas_show_user_nicename_options_list' hook.
  * @uses esc_html_e() To make sure we're safe to display.
  * @uses checked() To check that box.
- * @uses esc_attr_e() To make sure we're safe to display.
+ * @uses esc_attr() To make sure we're safe to display.
  */
 function ba_eas_show_user_nicename( $user ) {
 
 	// Return early if the user can't edit the author slug
-	if ( !ba_eas_can_edit_author_slug() ) {
+	if ( ! ba_eas_can_edit_author_slug() ) {
 		return false;
 	}
 
 	// Setup the nicename
 	$nicename = '';
-	if ( !empty( $user->user_nicename ) ) {
+	if ( ! empty( $user->user_nicename ) ) {
 		$nicename = $user->user_nicename;
 	}
 
@@ -51,17 +51,17 @@ function ba_eas_show_user_nicename( $user ) {
 	$options['displayname'] = trim( sanitize_title( $user->display_name ) );
 
 	// Setup the first name
-	if ( !empty( $user->first_name ) ) {
+	if ( ! empty( $user->first_name ) ) {
 		$options['firstname'] = trim( sanitize_title( $user->first_name ) );
 	}
 
 	// Setup the last name
-	if ( !empty( $user->last_name ) ) {
+	if ( ! empty( $user->last_name ) ) {
 		$options['lastname'] = trim( sanitize_title( $user->last_name ) );
 	}
 
 	// Setup the first/last name combos
-	if ( !empty( $options['firstname'] ) && !empty( $options['lastname'] ) ) {
+	if ( ! empty( $options['firstname'] ) && ! empty( $options['lastname'] ) ) {
 		$options['firslast']  = $options['firstname'] . '-' . $options['lastname'];
 		$options['lastfirst'] = $options['lastname'] . '-' . $options['firstname'];
 	}
@@ -88,13 +88,13 @@ function ba_eas_show_user_nicename( $user ) {
 					$checked_text = checked( $item, $nicename, false );
 
 					// Flip the switch if we're checked to block custom from being checked
-					if ( !empty( $checked_text ) ) {
+					if ( ! empty( $checked_text ) ) {
 						$checked = false;
 					}
 				?>
-				<label title="<?php esc_attr_e( $item ); ?>"><input type="radio" id="ba_eas_author_slug" name="ba_eas_author_slug" value="<?php esc_attr_e( $item ); ?>"<?php echo $checked_text; ?>> <span><?php esc_attr_e( $item ); ?></span></label><br>
+				<label title="<?php echo esc_attr( $item ); ?>"><input type="radio" id="ba_eas_author_slug" name="ba_eas_author_slug" value="<?php echo esc_attr( $item ); ?>"<?php echo $checked_text; ?>> <span><?php echo esc_attr( $item ); ?></span></label><br>
 				<?php } ?>
-				<label title="<?php esc_attr_e( $nicename ); ?>"><input type="radio" id="ba_eas_author_slug_custom_radio" name="ba_eas_author_slug" value="\c\u\s\t\o\m"<?php checked( $checked ); ?>> <span><?php esc_html_e( 'Custom:', 'edit-author-slug' ); ?> </span></label> <input type="text" name="ba_eas_author_slug_custom" id="ba_eas_author_slug_custom" value="<?php esc_attr_e( $nicename ); ?>" class="regular-text" />
+				<label title="<?php echo esc_attr( $nicename ); ?>"><input type="radio" id="ba_eas_author_slug_custom_radio" name="ba_eas_author_slug" value="\c\u\s\t\o\m"<?php checked( $checked ); ?>> <span><?php esc_html_e( 'Custom:', 'edit-author-slug' ); ?> </span></label> <input type="text" name="ba_eas_author_slug_custom" id="ba_eas_author_slug_custom" value="<?php echo esc_attr( $nicename ); ?>" class="regular-text" />
 				</fieldset>
 			</td>
 		</tr></tbody>
@@ -127,7 +127,7 @@ function ba_eas_show_user_nicename( $user ) {
 function ba_eas_update_user_nicename( $errors, $update, $user ) {
 
 	// We shouldn't be here if we're not updating
-	if ( !$update ) {
+	if ( ! $update ) {
 		return;
 	}
 
@@ -135,7 +135,7 @@ function ba_eas_update_user_nicename( $errors, $update, $user ) {
 	check_admin_referer( 'update-user_' . $user->ID );
 
 	// Bail early if user can't edit the slug
-	if ( !ba_eas_can_edit_author_slug() ) {
+	if ( ! ba_eas_can_edit_author_slug() ) {
 		return;
 	}
 
@@ -148,7 +148,7 @@ function ba_eas_update_user_nicename( $errors, $update, $user ) {
 	$_user = get_userdata( $user->ID );
 
 	// Check for a custom author slug
-	if ( !empty( $_POST['ba_eas_author_slug'] ) && isset( $_POST['ba_eas_author_slug_custom'] ) && '\c\u\s\t\o\m' == stripslashes( $_POST['ba_eas_author_slug'] ) ) {
+	if ( ! empty( $_POST['ba_eas_author_slug'] ) && isset( $_POST['ba_eas_author_slug_custom'] ) && '\c\u\s\t\o\m' == stripslashes( $_POST['ba_eas_author_slug'] ) ) {
 		$_POST['ba_eas_author_slug'] = $_POST['ba_eas_author_slug_custom'];
 	}
 
@@ -160,7 +160,7 @@ function ba_eas_update_user_nicename( $errors, $update, $user ) {
 
 	// Do we have an author slug?
 	if ( empty( $author_slug ) ) {
-		$errors->add( 'ba_edit_author_slug', __( '<strong>ERROR</strong>: An author slug cannot be blank. Please try again.' ) );
+		$errors->add( 'ba_edit_author_slug', __( '<strong>ERROR</strong>: An author slug cannot be blank. Please try again.', 'edit-author-slug' ) );
 		return;
 	}
 
@@ -178,13 +178,13 @@ function ba_eas_update_user_nicename( $errors, $update, $user ) {
 
 		// Do we have an author slug?
 		if ( empty( $author_slug ) ) {
-			$errors->add( 'ba_edit_author_slug', __( '<strong>ERROR</strong>: That author slug appears to be invalid. Please try something different.' ) );
+			$errors->add( 'ba_edit_author_slug', __( '<strong>ERROR</strong>: That author slug appears to be invalid. Please try something different.', 'edit-author-slug' ) );
 			return;
 		}
 
 		// Does this author slug already exist?
 		if ( get_user_by( 'slug', $author_slug ) && (int) get_user_by( 'slug', $author_slug )->ID !== $user->ID ) {
-			$errors->add( 'ba_edit_author_slug', sprintf( __( '<strong>ERROR</strong>: The author slug, %1$s, already exists. Please try something different.' ), '<strong><em>' . esc_attr( $author_slug ) . '</em></strong>' ) );
+			$errors->add( 'ba_edit_author_slug', sprintf( __( '<strong>ERROR</strong>: The author slug, %1$s, already exists. Please try something different.', 'edit-author-slug' ), '<strong><em>' . esc_attr( $author_slug ) . '</em></strong>' ) );
 			return;
 		}
 
@@ -265,7 +265,7 @@ function ba_eas_author_slug_custom_column( $default, $column_name, $user_id ) {
 	if ( 'ba-eas-author-slug' == $column_name ) {
 		$user = get_userdata( $user_id );
 
-		if ( !empty( $user->user_nicename ) ) {
+		if ( ! empty( $user->user_nicename ) ) {
 			$default = esc_attr( $user->user_nicename );
 		}
 	}
@@ -301,8 +301,9 @@ function ba_eas_show_user_nicename_scripts() {
 	//<![CDATA[
 		jQuery(document).ready(function($){
 			$("input[name='ba_eas_author_slug']").click(function(){
-				if ( "ba_eas_author_slug_custom_radio" != $(this).attr("id") )
+				if ( "ba_eas_author_slug_custom_radio" != $(this).attr("id") ) {
 					$("input[name='ba_eas_author_slug_custom']").val( $(this).val() ).siblings('.example').text( $(this).siblings('span').text() );
+				}
 			});
 			$("input[name='ba_eas_author_slug_custom']").focus(function(){
 				$("#ba_eas_author_slug_custom_radio").attr("checked", "checked");
@@ -325,7 +326,7 @@ function ba_eas_show_user_nicename_scripts() {
 		jQuery(document).ready(function($){
 
 			// Hide the slugs if we're not doing role-based
-			if ( !$("input[name='_ba_eas_do_role_based']").is(':checked') ) {
+			if ( ! $("input[name='_ba_eas_do_role_based']").is(':checked') ) {
 				$("input[name='_ba_eas_do_role_based']").parents('tr').next('tr').addClass('hidden');
 			}
 
@@ -339,7 +340,7 @@ function ba_eas_show_user_nicename_scripts() {
 			});
 
 			// Hide the slugs if we're not doing auto-update
-			if ( !$("input[name='_ba_eas_do_auto_update']").is(':checked') ) {
+			if ( ! $("input[name='_ba_eas_do_auto_update']").is(':checked') ) {
 				$("input[name='_ba_eas_do_auto_update']").parents('tr').next('tr').addClass('hidden');
 			}
 
@@ -399,7 +400,7 @@ function ba_eas_sanitize_author_base( $author_base ) {
 		update_option( '_ba_eas_author_base', $ba_eas->author_base );
 
 		// Update the author_base in the WP_Rewrite object
-		if ( !empty( $ba_eas->author_base ) ) {
+		if ( ! empty( $ba_eas->author_base ) ) {
 			$GLOBALS['wp_rewrite']->author_base = $ba_eas->author_base;
 		}
 	}
@@ -527,14 +528,14 @@ function ba_eas_admin_setting_callback_auto_update_section() {
  *
  * @uses ba_eas() BA_Edit_Author_Slug object
  * @uses apply_filters() To call 'editable_slug' hook
- * @uses esc_attr_e() To sanitize the author base
+ * @uses esc_attr() To sanitize the author base
  */
 function ba_eas_admin_setting_callback_author_base() {
 
 	$author_base = apply_filters( 'editable_slug', ba_eas()->author_base );
 ?>
 
-		<input id="_ba_eas_author_base" name="_ba_eas_author_base" type="text" value="<?php esc_attr_e( $author_base ); ?>" class="regular-text code" /> <em><?php _e( "Defaults to 'author'", 'edit-author-slug' ); ?></em>
+		<input id="_ba_eas_author_base" name="_ba_eas_author_base" type="text" value="<?php echo esc_attr( $author_base ); ?>" class="regular-text code" /> <em><?php _e( "Defaults to 'author'", 'edit-author-slug' ); ?></em>
 
 <?php
 }
@@ -552,7 +553,7 @@ function ba_eas_admin_setting_callback_do_role_based() {
 ?>
 
 		<input name="_ba_eas_do_role_based" id="_ba_eas_do_role_based" value="1"<?php checked( ba_eas()->do_role_based, '1' ); ?> type="checkbox" />
-		<label for="_ba_eas_do_role_based"><?php esc_html_e( 'Set user\'s Author Base according to their role. (The above "Author Base" setting will be used as a fallback.)' ); ?></label>
+		<label for="_ba_eas_do_role_based"><?php esc_html_e( 'Set user\'s Author Base according to their role. (The above "Author Base" setting will be used as a fallback.)', 'edit-author-slug' ); ?></label>
 
 <?php
 }
@@ -562,28 +563,33 @@ function ba_eas_admin_setting_callback_do_role_based() {
  *
  * @since 1.0.0
  *
- * @uses ba_eas_get_editable_roles() To get the editable roles.
- * @uses get_option() To get the role slugs array.
- * @uses wp_parse_args() To parse the role slugs.
- * @uses esc_html_e() To sanitize localized text for display.
- * @uses sanitize_title() To sanitize the role slugs.
+ * @uses ba_eas() To get the role slugs object.
+ * @uses ba_eas_get_default_role_slugs() To get the editable roles.
  * @uses translate_user_role() To translate the impossible.
+ * @uses sanitize_title() To sanitize the role slugs.
+ * @uses esc_attr() To sanitize role slugs for display.
+ * @uses esc_html() To sanitize localized text for display.
  */
 function ba_eas_admin_setting_callback_role_slugs() {
 
-	// Get editable_roles array
-	$editable_roles = ba_eas_get_editable_roles();
-
-	// Merge system roles with any customizations we may have
-	$roles = wp_parse_args( get_option( '_ba_eas_role_slugs', array() ), $editable_roles );
+	// Make sure we didn't pick up any dynamic roles between now and initialization
+	$roles = array_replace_recursive( ba_eas()->role_slugs, ba_eas_get_default_role_slugs() );
 
 	// Display the role slug customization fields
-	foreach( $roles as $key => $role ) {
+	foreach ( $roles as $role => $details ) {
+
+		if ( empty( $details['name'] ) ) {
+			continue;
+		}
+
+		// Check for empty slugs from picking up a dynamic role
+		if ( empty( $details['slug'] ) ) {
+			$details['slug'] = sanitize_title( translate_user_role( $details['name'] ) );
+		}
 ?>
 
-		<input name="_ba_eas_role_slugs[<?php esc_html_e( $key ); ?>][slug]" id="_ba_eas_role_slugs[<?php esc_html_e( $key ); ?>][slug]" type="text" value="<?php echo sanitize_title( $role['slug'] ); ?>" class="regular-text code" />
-		<input name="_ba_eas_role_slugs[<?php esc_html_e( $key ); ?>][name]" id="_ba_eas_role_slugs[<?php esc_html_e( $key ); ?>][name]" type="hidden" value="<?php echo $role['name']; ?>" />
-		<label for="_ba_eas_role_slugs[<?php esc_html_e( $key ); ?>][slug]"><?php esc_html_e( translate_user_role( $role['name'] ) ); ?></label><br />
+		<input name="_ba_eas_role_slugs[<?php echo esc_attr( $role ); ?>][slug]" id="_ba_eas_role_slugs[<?php echo esc_attr( $role ); ?>][slug]" type="text" value="<?php echo sanitize_title( $details['slug'] ); ?>" class="regular-text code" />
+		<label for="_ba_eas_role_slugs[<?php echo esc_attr( $role ); ?>][slug]"><?php echo esc_html( translate_user_role( $details['name'] ) ); ?></label><br />
 
 <?php
 	}
@@ -594,19 +600,20 @@ function ba_eas_admin_setting_callback_role_slugs() {
  *
  * @since 1.0.0
  *
+ * @uses ba_eas_get_default_role_slugs() To get the editable roles.
  * @uses sanitize_title() To sanitize the slug.
- * @uses ba_eas_get_editable_roles() To get the editable roles.
- * @uses get_option() To get the role slugs array.
- * @uses wp_parse_args() To parse the role slugs.
  * @uses ba_eas() BA_Edit_Author_Slug object.
  */
 function ba_eas_admin_setting_sanitize_callback_role_slugs( $role_slugs = array() ) {
 
+	// Get default role slugs
+	$default_role_slugs = ba_eas_get_default_role_slugs();
+
 	// Sanitize the slugs passed via POST
-	foreach( $role_slugs as $role => $role_slug ) {
-		$slug           = sanitize_title( $role_slug['slug'] );
-		$editable_roles = ba_eas_get_editable_roles();
-		$role_slugs[$role]['slug'] = empty( $slug ) ? $editable_roles[$role]['slug'] : $slug;
+	foreach ( $role_slugs as $role => $role_slug ) {
+		$slug                        = sanitize_title( $role_slug['slug'] );
+		$backup_role_slug            = empty( $default_role_slugs[ $role ] ) ? sanitize_title( $role ) : $default_role_slugs[ $role ];
+		$role_slugs[ $role ]['slug'] = empty( $slug ) ? $backup_role_slug : $slug;
 	}
 
 	/*
@@ -616,8 +623,7 @@ function ba_eas_admin_setting_sanitize_callback_role_slugs( $role_slugs = array(
 	 * This could lead to lower level admins stamping out customizations
 	 * that only a higher level admin can, and has already, set.
 	 */
-	$role_slugs = wp_parse_args( $role_slugs, get_option( '_ba_eas_role_slugs', array() ) );
-
+	$role_slugs = array_replace_recursive( $role_slugs, ba_eas()->role_slugs );
 
 	// Set BA_Edit_Author_Slug::role_slugs for later use
 	ba_eas()->role_slugs = $role_slugs;
@@ -638,7 +644,7 @@ function ba_eas_admin_setting_callback_do_auto_update() {
 ?>
 
 		<input name="_ba_eas_do_auto_update" id="_ba_eas_do_auto_update" value="1"<?php checked( ba_eas()->do_auto_update, '1' ); ?> type="checkbox" />
-		<label for="_ba_eas_do_auto_update"><?php esc_html_e( 'Automatically update Author Slug when a user updates their profile.' ); ?></label>
+		<label for="_ba_eas_do_auto_update"><?php esc_html_e( 'Automatically update Author Slug when a user updates their profile.', 'edit-author-slug' ); ?></label>
 
 <?php
 }
@@ -650,7 +656,7 @@ function ba_eas_admin_setting_callback_do_auto_update() {
  *
  * @uses ba_eas() BA_Edit_Author_Slug object.
  * @uses apply_filters() To call 'ba_eas_default_user_nicename_options_list' hook.
- * @uses esc_attr_e() To sanitize the nicename options.
+ * @uses esc_attr() To sanitize the nicename options.
  * @uses selected() To determine if we're selected.
  */
 function ba_eas_admin_setting_callback_default_user_nicename() {
@@ -680,7 +686,7 @@ function ba_eas_admin_setting_callback_default_user_nicename() {
 
 		<select id="_ba_eas_default_user_nicename" name="_ba_eas_default_user_nicename">
 		<?php foreach ( (array) $options as $id => $item ) { ?>
-			<option id="<?php esc_attr_e( $id ); ?>" value="<?php esc_attr_e( $id ); ?>"<?php selected( $structure, $id ); ?>><?php esc_attr_e( $item ); ?></option>
+			<option id="<?php echo esc_attr( $id ); ?>" value="<?php echo esc_attr( $id ); ?>"<?php selected( $structure, $id ); ?>><?php echo esc_attr( $item ); ?></option>
 		<?php } ?>
 		</select>
 
