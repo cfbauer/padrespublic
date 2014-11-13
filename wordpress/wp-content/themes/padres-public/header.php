@@ -25,6 +25,7 @@
 
 <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" type="text/css" rel="stylesheet">
 <link rel="shortcut icon" href="<?php bloginfo( 'template_url' ); ?>/favicon.ico" />
+<meta name="theme-color" content="#E2DBC9">
 
 <?php wp_head(); ?>
 </head>
