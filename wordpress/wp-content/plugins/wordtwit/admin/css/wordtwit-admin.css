@@ -1,4 +1,7 @@
-/* @override http://wptp3.local.com/wp-content/plugins/wordtwit/admin/css/wordtwit-admin.css?ver=e44436592c2daabbd3d797f8967245a3 */
+/* @override 
+	http://wptp3.local.com/wp-content/plugins/wordtwit/admin/css/wordtwit-admin.css?ver=e44436592c2daabbd3d797f8967245a3
+	http://wptp3.local.com/wp-content/plugins/wordtwit/admin/css/wordtwit-admin.css?ver=8ed3bd7a545d74cca9ad9e48ca7422b9
+*/
 
 /* WordTwit Pro Admin CSS */
 
@@ -51,7 +54,7 @@
 
 #bnc {
 	width: 98%;
-	font-size: 12px;
+	font-size: 13px;
 }
 
 #bnc a {
@@ -105,9 +108,9 @@
 
 #bnc legend {
 	color: #264761;
-	font-size: 15px;
+	font-size: 18px;
 	font-weight: bold;
-	font-style: italic;
+	margin-bottom: 10px;
 }
 
 #bnc h4 {
@@ -116,34 +119,22 @@
 }
 
 #bnc h5 {
-	font: bold 15px Georgia, "Times New Roman", Times, serif;
 	color: #5f7176;
 	text-shadow: #fff 0 1px 0;
+	font-weight: bold;
+	font-size: 16px;
 }
 
 #bnc h6 {
 	color: #666;
 	text-shadow: #fff 0 1px 0;
-	font: bold 11px Georgia, "Times New Roman", Times, serif;
 	margin-bottom: 10px;
+	font-weight: bold;
+	font-size: 12px;
 }
 
 .status-unl {
 	color: #9cb2c1;
-}
-
-#bnc p.api-warning {
-	border: 1px solid #fbbf8c;
-	background: #fcf7e3 url(../images/icons/info.png) no-repeat 10px 5px;
-	color: #5f7176;
-	font-size: 11px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	padding-left: 35px;
-	line-height: 14px;
-	margin-right: 0;
-	font-weight: bold;
-	margin-bottom: 20px;
 }
 
 #bnc-form .saved {
@@ -164,7 +155,7 @@
 
 #bnc-form #saving-ajax {
 	position: relative;
-	font-size: 11px;
+	font-size: 12px;
 	font-weight: bold;
 	color: #777;
 	margin-left: 10px;
@@ -227,8 +218,7 @@ a#upgrade-link:active {
 /* @group Tooltips */
 
 #bnc-form a.wordtwit-tooltip {
-	padding: 3px 6px 2px 5px;
-	font-size: 10px;
+	padding: 3px 6px;
 	text-decoration: none;
 	background: url(../images/help-icon.png) no-repeat 0 1px;
 	width: 16px;
@@ -236,6 +226,7 @@ a#upgrade-link:active {
 	position: relative;
 	z-index: 1;
 	font-weight: bold;
+	font-size: 9px;
 }
 
 .tooltip {
@@ -245,7 +236,7 @@ a#upgrade-link:active {
 	border-radius:5px;
 	padding:10px;
 	color:#fff;
-	font-size:12px Arial;
+	font-size: 12px;
 	max-width: 200px;
 	z-index: 1000;
 }
@@ -260,16 +251,10 @@ a#upgrade-link:active {
 }
 
 #bnc input.text,#bnc #wordtwit-set-input-area input {
-	border: 1px solid #d3d3d3;
-	background: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#fff));
-	background: -webkit-linear-gradient(top, #f9f9f9, #fff);
-	background: -moz-linear-gradient(top, #f9f9f9, #fff);
-	background: -o-linear-gradient(top, #f9f9f9, #fff);
-	background: -ms-linear-gradient(top, #f9f9f9, #fff);
-	background: linear-gradient(top, #f9f9f9, #fff);
 	width: 30%;
 	margin-right: 5px;
-	font-size: 1em;
+	font-size: 1.1em;
+	padding: 5px;
 }
 
 #bnc input.text-array {
@@ -514,8 +499,6 @@ a#upgrade-link:active {
 }
 
 /* @end */
-	
-	
 
 
 /* @end */
@@ -564,7 +547,7 @@ a#upgrade-link:active {
 	width: 95.5%;
 	padding: 10px;
 	background: transparent;
-	border-bottom: 11px solid #d2e5ee;
+	border-bottom: 1px solid #d2e5ee;
 }
 
 /* @group Advanced */
@@ -588,24 +571,30 @@ a#upgrade-link:active {
 #bnc #wordtwit-tabbed-area .left-area {
 	float: left;
 	padding: 0;
-	margin: 1px 0 0;
+	margin: 20px 0 0;
 	width: 18%;
 	text-shadow: #fff 0 1px 0px;
 	border-style: none;
+	-webkit-border-top-left-radius: 2px;
+	-webkit-border-bottom-left-radius: 2px;
+	-moz-border-radius-topleft: 2px;
+	-moz-border-radius-bottomleft: 2px;
+	border-top-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+	overflow: hidden;
 }
 
 #bnc .left-area ul li a {
 	display: block;
-	padding-top: 8px;
-	padding-bottom: 8px;
-	padding-left: 8px;
 	margin-right: -1px;
+	border-left: 1px solid #dfdfe2;
+	padding: 8px;
 	border-bottom: 1px solid #dfdfe2;
+	background-color: rgba(0,0,0,.03);
 }
 
-#bnc .left-area ul li a.active:first-child {
+#bnc .left-area ul li:first-child a {
 	border-top: 1px solid #dfdfe2;
-	margin-top: -1px;
 }
 
 #bnc .left-area ul li a.active {
@@ -613,9 +602,8 @@ a#upgrade-link:active {
 	z-index: 2;
 	background-color: #fff;
 	position: relative;
-	border-left-style: solid;
-	border-left-width: 3px;
-	margin-left: -3px;
+	padding-left: 8px;
+	margin-right: -1px;
 }
 
 /* @group General */
@@ -655,13 +643,13 @@ a#upgrade-link:active {
 	border-radius-topright: 2px;
 	border-top-left-radius: 2px;
 	border-top-right-radius: 2px;
-	font: 14px Georgia, "Times New Roman", Times, serif;
+	font: 14px;
 	background: #d5e6f2 url(../images/blue-grad.png) repeat-x left top;
 }
 
 #bnc .box-holder .sub {
 	color: #777;
-	font: italic 13px Georgia, "Times New Roman", Times, serif;
+	font: italic 13px;
 	margin: 10px 5px 10px 10px;
 }
 
@@ -701,7 +689,7 @@ a#upgrade-link:active {
 }
 
 #bnc .box-holder td.box-table-number {
-	font: 18px Georgia, "Times New Roman", Times, serif;
+	font: 18px;
 	color: #555;
 	text-align: right;
 	padding-top: 1%;
@@ -882,7 +870,7 @@ a#upgrade-link:active {
 }
 
 #bnc .type-plugin-compat table th {
-	font: italic bold 14px Georgia, "Times New Roman", Times, serif;
+	font: italic bold 14px;
 	text-align: left;
 	padding-bottom: 10px;
 	color: #666;

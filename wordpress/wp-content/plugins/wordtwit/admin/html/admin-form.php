@@ -5,7 +5,7 @@
 		<div id="wordtwit-admin-top">
 			<ul id="top-area">
 				<li><a href="http://bravenewcode.s3.amazonaws.com/files/WordTwitUserGuide.pdf">Download User Guide</a> | </li>
-				<li><a href="http://www.bravenewcode.com/wptouch/?utm_campaign=wordtwit-free&utm_medium=web&utm_source=wordtwit">Discover WPtouch Pro</a> | </li>
+				<li><a href="http://www.wptouch.com/?utm_campaign=wordtwit-free&utm_medium=web&utm_source=wordtwit">Discover WPtouch Pro</a> | </li>
 				<li><a href="http://www.facebook.com/BraveNewCode">BNC on Facebook</a> | </li>
 				<li><a href="http://www.twitter.com/BraveNewCode">BNC on Twitter</a></li>
 			</ul>

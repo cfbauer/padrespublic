@@ -2,8 +2,8 @@
 Contributors: BraveNewCode, dalemugford, duanestorey
 Tags: wordtwit, twitter, tweet, tweeting, twitter tool, posts, social media, social networking, automattic, bravenewcode, wptouch, tinyurl, owl.ly, bit.ly
 Requires at least: 3.6
-Tested up to: 3.8.1
-Stable tag: 3.6
+Tested up to: 4.0
+Stable tag: 3.7
 
 WordTwit is a plugin that uses the Twitter API to automatically publish tweets about new posts on your WordPress website, and is configurable with hashtags, authors, multiple tweets, multiple accounts & more.
 
@@ -24,6 +24,10 @@ WordTwit includes:
 Also check out our professional mobile plugin for WordPress, [WPtouch](http://www.bravenewcode.com/wptouch/?utm_campaign=wordtwit-front&utm_medium=web&utm_source=wordpressdotorg "WPtouch").
 
 == Changelog ==
+
+= Version 3.7 =
+
+* Changed: Admin styling improvements and fixes
 
 = Version 3.6 =
 
