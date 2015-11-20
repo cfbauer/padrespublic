@@ -474,6 +474,10 @@ i {
 	padding-right:5px;
 }
 
+.entry-content li {
+	margin-bottom: 10px;
+}
+
 #post-1490 i {
 	padding-left:5px;
 	position:relative;
@@ -604,6 +608,8 @@ i {
 	padding-left:20px;
 	border-bottom:1px solid $sand;
 	padding-bottom:20px;
+	height: auto;
+	overflow: hidden;
 	a {
 		@include transition-color($speed:.15s);
 		@include grow();
@@ -626,15 +632,17 @@ i {
 	}
 }
 
-#text-5 {
+/* don't remember what this was for */
+#text-6 {
 	padding-left:0;
 	.textwidget {
 		width:160px;
 		margin:0 auto;
 		display:block;
 	}
-}
-#text-3 {
+} 
+
+#text-5 {
 	padding:0; /* yardbarker widget */
 	margin:0;
 }
@@ -742,11 +750,11 @@ i {
 		height:140px;
 		width:810px;
 		float:left;
-		background:url('images/banner_gwynn.jpg') no-repeat center #fff;
+		background:url('images/banner_padres-public.jpg') no-repeat center #fff;
 		position:relative;
 	}
 	.home #banner {
-		background:url('images/banner_gwynn.jpg') no-repeat center #fff;
+		background:url('images/banner_padres-public.jpg') no-repeat center #fff;
 	}
 	@include blog-banner("rjs-fro");
 	@include blog-banner("400-in-94");

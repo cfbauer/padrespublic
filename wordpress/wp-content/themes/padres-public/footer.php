@@ -13,7 +13,7 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 
-    <img src="<?php bloginfo('template_url'); ?>/images/banner_coleman.jpg" alt="Jerry Coleman tribute" width="745px" height="140px" class="jerry"/>
+    <img src="<?php bloginfo('template_url'); ?>/images/banner_gwynn_and_coleman.jpg" alt="Tony Gwynn and Jerry Coleman tribute" width="745px" height="140px" class="jerry"/>
 
     <div class="footer-inner">
       <a href="privacy-policy">Privacy Policy</a>

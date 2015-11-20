@@ -1,0 +1,977 @@
+msgid ""
+msgstr "MIME-Version: 1.0\n"
+
+#. Name.
+msgid "Polldaddy Polls &amp; Ratings"
+msgstr ""
+
+#. Short description.
+msgid "Create and manage Polldaddy polls and ratings from within WordPress."
+msgstr ""
+
+#. Screenshot description.
+msgid "Manage polls"
+msgstr ""
+
+#. Screenshot description.
+msgid "Edit poll"
+msgstr ""
+
+#. Screenshot description.
+msgid "View poll on page or in a widget"
+msgstr ""
+
+#. Screenshot description.
+msgid "Add ratings"
+msgstr ""
+
+#. Screenshot description.
+msgid "Ratings on a post"
+msgstr ""
+
+#. Screenshot description.
+msgid "Ratings on comments"
+msgstr ""
+
+#. Found in description list item.
+msgid "Arabic"
+msgstr ""
+
+#. Found in description list item.
+msgid "Bosnian"
+msgstr ""
+
+#. Found in description list item.
+msgid "Bulgarian"
+msgstr ""
+
+#. Found in description list item.
+msgid "Chinese (Taiwan)"
+msgstr ""
+
+#. Found in description list item.
+msgid "Croatian"
+msgstr ""
+
+#. Found in description list item.
+msgid "Czech"
+msgstr ""
+
+#. Found in description list item.
+msgid "Danish"
+msgstr ""
+
+#. Found in description list item.
+msgid "Dutch"
+msgstr ""
+
+#. Found in description list item.
+msgid "Finnish"
+msgstr ""
+
+#. Found in description list item.
+msgid "French (Canada)"
+msgstr ""
+
+#. Found in description list item.
+msgid "French (France)"
+msgstr ""
+
+#. Found in description list item.
+msgid "French (Switzerland)"
+msgstr ""
+
+#. Found in description list item.
+msgid "Galician"
+msgstr ""
+
+#. Found in description list item.
+msgid "German"
+msgstr ""
+
+#. Found in description list item.
+msgid "Greek (Polytonic)"
+msgstr ""
+
+#. Found in description list item.
+msgid "Hebrew"
+msgstr ""
+
+#. Found in description list item.
+msgid "Hungarian"
+msgstr ""
+
+#. Found in description list item.
+msgid "Indonesian"
+msgstr ""
+
+#. Found in description list item.
+msgid "Irish"
+msgstr ""
+
+#. Found in description list item.
+msgid "Italian"
+msgstr ""
+
+#. Found in description list item.
+msgid "Korean"
+msgstr ""
+
+#. Found in description list item.
+msgid "Lithuanian"
+msgstr ""
+
+#. Found in description list item.
+msgid "Malay"
+msgstr ""
+
+#. Found in description list item.
+msgid "Norwegian"
+msgstr ""
+
+#. Found in description list item.
+msgid "Norwegian (Nynorsk)"
+msgstr ""
+
+#. Found in description list item.
+msgid "Persian"
+msgstr ""
+
+#. Found in description list item.
+msgid "Polish"
+msgstr ""
+
+#. Found in description list item.
+msgid "Portuguese (Brazil)"
+msgstr ""
+
+#. Found in description list item.
+msgid "Portuguese (Portugal)"
+msgstr ""
+
+#. Found in description list item.
+msgid "Romanian"
+msgstr ""
+
+#. Found in description list item.
+msgid "Russian"
+msgstr ""
+
+#. Found in description list item.
+msgid "Serbian"
+msgstr ""
+
+#. Found in description list item.
+msgid "Slovak"
+msgstr ""
+
+#. Found in description list item.
+msgid "Spanish (Puerto Rico)"
+msgstr ""
+
+#. Found in description list item.
+msgid "Spanish (Spain)"
+msgstr ""
+
+#. Found in description list item.
+msgid "Swedish"
+msgstr ""
+
+#. Found in description list item.
+msgid "Uighur"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "The Polldaddy Polls and Ratings plugin allows you to create and manage polls and ratings from within your WordPress dashboard. You can create polls, choose from 20 different styles for your polls, and view all results for your polls as they come in. All Polldaddy polls are fully customizable, you can set a close date for your poll, create multiple choice polls, choose whether to display the results or keep them private. You can also create your own custom style for your poll. You can even embed the polls you create on other websites. You can collect unlimited votes and create unlimited polls. The new ratings menu allows you to embed ratings into your posts, pages or comments. The rating editor allows you to fully customize your rating. You can also avail of the 'Top Rated' widget that will allow you to place the widget in your sidebar. This widget will show you the top rated posts, pages and comments today, this week and this month."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "The Polldaddy plugin requires PHP 5."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Polldaddy Polls is currently available in the following languages:"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Want to help translate the plugin or keep an existing translation up-to-date? Head on over to the <a href=\"http://translate.wordpress.com/projects/polldaddy/plugin\">translation site</a>."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Some strings are not translated when polls and surveys are embedded. You will have to translate them using a language pack on <a href=\"Polldaddy.com\">http://polldaddy.com/</a>."
+msgstr ""
+
+#. Found in installation paragraph.
+msgid ""
+"Upload the plugin to your blog (or search for it and install it on your plugins page), activate it, then go to Settings-&gt;Polls to configure the plugin. You'll need a Polldaddy API key available from your <a href=\"http://polldaddy.com/account/#apikey\">Polldaddy account \n"
+"page</a> to sync your account and pull in your existing polls and ratings.\n"
+"Polldaddy.com is now linked to WordPress.com using <a href=\"http://en.support.wordpress.com/wpcc-faq/\">WordPress.com Connect</a> which means you can use your WordPress.com username and password to login to Polldaddy.com. If you have a WordPress.com account and have never used Polldaddy.com you can login <a href=\"https://polldaddy.com/login/\">here</a> to access Polldaddy.com."
+msgstr ""
+
+#. Found in installation paragraph.
+msgid "You can find further help on our <a href=\"http://support.polldaddy.com/\">support page</a>. If you have any problems please use the <a href=\"http://wordpress.org/support/plugin/polldaddy\">support forum</a>. The plugin also logs activity to a file using the <a href=\"http://wordpress.org/extend/plugins/wp-debug-logger/\">WP Debug Logger</a> plugin which can be useful in determining the cause of a problem."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed WP_Widget warning."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed \"previous\" and \"next\" links on the poll feedback page."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "SSL support for poll and survey shortcodes"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Security update of survey shortcode"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Resize the \"Add Poll\" popup."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Validate the rating_id before updating it on the ratings settings page."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed XSS in ratings shortcode. Props vortfu"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added forms to allow users to reset and restore their connection settings. Useful to fix rating widget problems."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "The \"contact support text is improved. Now it suggests resetting the connection first."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Minor security fix: Properly sanitize and escape the rating title filter. Props mazengamal."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added a UI to the ratings settings page to enable or disable the rich snippets support"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Minor bug fixes"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Some minor updates to Irish, Japanese, Polish and Spanish translations."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Huge size reduction of language files by stripping unused strings."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "New feedback icon in admin menu"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Improved API documentation and fixed API entry box for new users."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Improved setup by directing the user to the settings page to enter their API key."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix to rich snippets support. Properly fetch ratings to cache."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed CSRF problem in ratings settings page."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed PHP 5.5.0 warning in class constructor."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add rich snippet support for ratings."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Login to Polldaddy via API Key instead of username and password now."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Removed \"month\" and \"never\" options from poll block expiration dropdown as they're not supported any more."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Misc bug fixes."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updated settings page: text, layout, Import -&gt; Link."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "On MU sites use blog_public blog option."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Removed deprecated warnings, props @Till"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added filter by category to Top Rated Widget"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added more retina images for ratings"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updated edit permissions on poll to allow an editor to edit a poll belonging to a user no longer member of blog"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed minor JS/CSS bugs"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Update poll editor to allow a user to delete an image from a poll answer"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed bug with new polls not including images when a poll is created"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed bug with missing retina image for polldaddy icon"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updated ratings settings to allow blog to show rating in search and archive pages"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updated how ratings are shown in excerpts which should work better with Jetpack and certain themes"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updated menus to only use one Top level menu - Feedback"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updated Settings-&gt;Polls &amp; Ratings menu to break into 2 separate menu items - Settings-&gt;Polls / Settings-&gt;Ratings"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updated menus to work with Feedbacks Top level menu item that comes with Jetpack plugin"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix for conflict with jetpack plugin. When both plugins were installed, conflict with older jetpack implementation of shortcode handler and redeclaration of polldaddy plugin function 'polldaddy_link()'"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updated translations to use latest from glotpress and removed a lot of untranslated text, making plugin a much smaller download."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added support for SSL on the admin dashboard."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updated the shortcodes to load more efficiently in the footer."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed number of minor javascript errors."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed bug with admin menu and toolbar showing in popup"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updated translation files and fixed gettext domain in plugin strings"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed wp_title filter parameter"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed ratings to show on category and archive pages."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added better sanitization to stop xss vulnerabilities"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix for CSS bug on admin pages with WordPress 3.3"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add range of new languages to further localize the plugin"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updated the shortcodes to be better sanitized to prevent possibility of XSS "
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Update Translation files from GlotPress to use "
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added option to custom style editor to set direction of text."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added option to allow shortcodes to load inline rather than in the footer. Some themes need this."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added support for slider popup polls and variable sized surveys"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added activity logging"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added Latvian translation"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added setting to configure filter used on blog title with ratings"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed bug in preview polls"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed display of ratings on posts and pages."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed confirmation dialog when deleting polls"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Changed PollDaddy to Polldaddy"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed bug in displaying multiple polls in a post"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed bug when using json_encode, it converts utf8 charaters to unicode values in post title but they were not getting escaped properly and thus were not displayed properly in reports or in top rated widget."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Tidy up shortcodes - remove keywords from no script tags, inline javascript is now xhtml compatible, load survey and poll javascript files in the footer to assist page load speeds"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Tested with version 3.2"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added extra shortcode handler for inline surveys"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix Polldaddy icon position on poll pages"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Remove rating javascript code from feeds and ajax"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed bugs with using new ajax.php in PHP 4"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed issue with conflicts with other plugins using ajax.php"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed bug in poll question media upload"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed bug in adding answers, if you clicked button multiple times, multiple answers were added with same name."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed side nav gray theme icon bug introduced by usage of sprite image"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added support to the shortcode for alignment. Usage: [polldaddy poll=xxxxxx align=right|left]"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed layout issues in Firefox 4 on embed interface"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed extraneous dividers bug"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Changed nav menu icon to sprite to fix hover flash bug"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed bug in selecting custom styles in poll editor for webkit browsers"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updated the UI"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added media embeds in poll editor"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added poll comments option"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed layout issues when viewing plugin in iframe/popup"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed bug in multiple choices dropdown"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed bug in updating style when updating all polls using that style "
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updated shortcodes to use latest Polldaddy code"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed minor bug in rating results"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed minor bug in poll editor to allow use of 0 as poll answer"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added extra check to edit permissions on whether user is a blog member"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added Turkish and Polish language packs"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added option to rating settings to disable ratings results popup"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed bug in choosing rating text color"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updated style editor to catch some missing strings so they can be now be localised"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added string maps to javascript files to allow them to be localised"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added extra label to ratings settings, vote, so now the label votes has a singular expression for localisation.                              "
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added option to style editor to update all polls that use this style, so any update to style will automatically be reflected in the poll."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Bug Fix: Embed options are now in readonly text inputs, resolves issue of pre tags being pasted along with embed code/URL in the HTML editor."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added delete option to rating reports to allow you to reset ratings results for posts/pages/comments"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Tidied poll and rating reports tables to use WordPress standard tables"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added new Embed options, added short URL to community site and Facebook directory"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added option to allow ratings to be excluded from posts and pages"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Bug Fix: Fix bug in ratings template tag that prevented it from working without being 1st enabled"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added Arabic language."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Bug Fix: Use of WP_Widget caused fatal error in installations pre 2.8"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added Localisation to Top Rated Widget."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Bug Fix: Rating were showing up on front page when posts ratings were enabled"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added fields to options menu to set the rating id for posts/pages/comments"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added a template tag to allow themes to place the rating wherever they want by echoing the function polldaddy_get_rating_html()"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added shortcodes to text widget, so now all Polldaddy shortcodes will work in the text widget."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added an option to synchronize the ratings account API key, useful if key in blog database is out of date or invalidated."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added option to Rating settings to allow ratings on the front page."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added more phrases to the pot file."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added stylesheet for blos that have a right to left language."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Bug Fix: Fixed javascript bug, clash with prototype in P2 theme, use of $ function."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Bug Fix: Fixed typo in API request URL."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added Options menu, that will allow users to set poll defaults settings, import another Polldaddy account and there is also a setting to allow each blog user to import their own Polldaddy account."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added the Top Rated widget."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added survey and rating short codes."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added a pot file to allow the plugin to be localized."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added a block repeat vote expiration setting to allow users to set how long to block out repeat voters from repeat voting"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Bug Fix: Fixed notices thrown by ratings when first loaded, empty response from API."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added Polldaddy Ratings, you can now add ratings to your posts, pages and comments"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Bug Fix: Sub-menu now highlights the correct option"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Bug Fix: Added fix for php warning when custom styles array empty"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Bug Fix: Added fix for cookie&amp;ip option not getting set due to API change"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Bug Fix: Added fix for missing styles array (used when javascript is disabled)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Bug Fix: Added fix for Internet Explorer 8 and jQuery fadeIn, fadeOut methods"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Bug Fix: Fixed some php warnings"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added poll option to allow you to set limit on number of answers for multiple choice polls."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Bug Fix: Added fix for open/close poll"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Bug Fix: Answer text in results now displaying the correct text"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added Poll Style Editor"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updated the Polldaddy API Client code"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Removed style picker javascript, now reference static file on Polldaddy"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Bug Fix: Polldaddy Answers link to poll in poll embed code now correct"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Bug Fix: iframe view of poll editor now display design area"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Bug Fix: Only print API error once"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added Poll Question and Answer fields now accept limited HTML tags"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added 'Share This' link option to allow voters to share the poll around the interweb"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Bug Fix: Other answers in the poll results are now displaying."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added new poll styles selector"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added Close/Open poll to poll actions"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added Custom Styles link to Edit poll, under Design. This link will be only present when the user has custom styles created on the Polldaddy.com site."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added option to make normal request every login"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Bug Fix: SSL request for Polldaddy API key sometimes failed due to host constraints, included option to make a normal http request in this case."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Bug Fix: Redirect after login now goes to list polls"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Bug Fix: Don't call Polldaddy API on every admin page load"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Bug Fix: Correct Image locations"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Bug Fix: CSS Tweaks for upcoming WordPress 2.8"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Make Javascript image selector more robust"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "New Polldaddy API"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Do not store UserCode, retrieve from API"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Bug Fix: Fix API key retrieval.  Improper use of wp_remote_post()"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Compatiblity with WordPress 2.7"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Bug Fix: Potential charset issues"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Bug fix: prevent some PHP define errors"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Bug fix: send content-length header when using wp_remote_post()"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Potential bug fix: Maybe get rid of 'Invalid Poll Author' error... again."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Bug fix: Allow reauthentication with Polldaddy email address and Polldaddy password.  This is necessary because the stored Polldaddy User API key is invalidated if the user's details change on Polldaddy.com."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Buf fix: Speed up CSS and JS."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Feature: Link to view Shortcode and JavaScript code for each poll."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "A few more helpful error messages."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Bug fix: Password field should be a password field, not a text field."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Potential bug fix: Maybe get rid of 'Invalid Poll Author' error."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Bug fix: Shortcode handler was commented out in earlier versions."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Bug fix: PHP Warning: in_array() [function.in-array]: Wrong datatype for second argument in polldaddy-xml.php on line 78"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Bug fix: Send text data escaped in CDATA to prevent XML errors."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Bug fix: Append to text value, don't overwrite it.  XML parser can call text handler many times per node."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Bug fix: No more slashes when a poll reloads in the edit form after an error."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Bug fix: Get rid of slashes."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Bug fix: PHP Fatal Error: call to undefined function"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Initial release"
+msgstr ""
+
+#. Found in changelog paragraph.
+msgid "Don't show \"Connect to Polldaddy\" notice everywhere. Only on plugins and polls pages"
+msgstr ""
+
+#. Found in faq header.
+msgid "Where do I find my Polls &amp; Ratings menus?"
+msgstr ""
+
+#. Found in faq header.
+msgid "I have multiple authors on my blog?  What happens?"
+msgstr ""
+
+#. Found in faq header.
+msgid "But, as an Administrator, can I edit my Authors' polls"
+msgstr ""
+
+#. Found in faq header.
+msgid "Neat! Um... can my Authors edit MY blog polls?"
+msgstr ""
+
+#. Found in faq header.
+msgid "Where are my ratings?"
+msgstr ""
+
+#. Found in faq header.
+msgid "I cannot access my ratings settings, I am getting a \"Sorry! There was an error creating your rating widget. Please contact Polldaddy support to fix this.\" message."
+msgstr ""
+
+#. Found in faq header.
+msgid "When I try to use a rating on a page, I get a PHP warning about the post title."
+msgstr ""
+
+#. Found in faq header.
+msgid "Why is a poll loading in the footer of my main page?"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "The Polls &amp; Ratings menus can now be found under the Feedbacks top level menu."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Each author that wants to create polls will need his or her own Polldaddy.com account."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Yes. You'll be able to edit the polls they create from your blog.  (You won't be able to edit any of their non-blog, personal polls they create through Polldaddy.com.)"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Nope.  The permissions are the same as for posts.  So Editors and Administrators can edit anyone's polls for that blog.  Authors can only edit their own."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Check that footer.php in your theme calls the wp_footer action. The rating javascript is loaded on this action."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "More info <a href=\"http://codex.wordpress.org/Theme_Development#Plugin_API_Hooks\">here</a>"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "You need to select the synchronize ratings account in the WordPress options page at Settings-&gt;Polls &amp; Ratings to make sure the ratings API key is valid."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Your rating uses the filter 'wp_title' by default when retrieving the post title, you may need to remove this in the Polls &amp; Ratings settings to allow ratings to work with your theme."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Your theme is getting the post content, without necessarily showing it. If the post has a poll, the poll javascript is loaded in the footer. To fix this, you need to enable the 'Load Shortcodes Inline' setting in the Polls &amp; Ratings settings. This will load the poll shortcode inline and will only load the poll if the content of the post is actually displayed."
+msgstr ""
